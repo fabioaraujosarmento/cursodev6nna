@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro de Usuário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="cadastroSucesso.html" method="post">
+            <fieldset>
+                <legend>Cadastro Usuário</legend>
+                
+                <p>Nome Completo: </p>
+                <input type="text" name="nomeCompleto" placeholder="Insira seu nome" required="">
+                <p>Senha: </p>
+                <input type="password" name="senha" placeholder="Insira sua senha" required=""><br><br>
+                <p>Sexo: </p>
+                <input type="radio" name="sexo" value="Masculino" required=""> Masculino
+                <input type="radio" name="sexo" value="Feminino"  required=""> Feminino<br><br>
+                
+                <p>Esportes Favoritos</p>
+                <input type="checkbox" name="Volei"    value="Volei"    required=""/> Volei<br>
+                <input type="checkbox" name="Basquete" value="Basquete" required=""/> Basquete<br><br>
+                
+                <p>Selecione a Cidade</p>
+                <select name="Cidade: " >
+                    <option value="Belém">Belém</option>
+                    <option value="Ananindeua">Ananindeua</option>
+                    <option value="Barcarena">Barcarena</option>
+                </select><br><br>
+                
+                <p>Observações</p>  
+                <textarea rows="10" cols="30" placeholder="Digite sua observação"></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Cancelar">
+                <input type="reset" value="Limpar">
+                <input type="hidden" name='Ação' value="Cadastrar Pessoa">
+            </fieldset>    
+       </form>    
+    </body>
+</html>
